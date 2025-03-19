@@ -1,0 +1,144 @@
+<!-- base for entire page -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Laura Grauer</title>
+
+    <link rel="stylesheet" href="stylesheet.css">
+
+    <link rel="icon" href="art-digital-7.png" type="image/png">
+</head>
+<body>
+    <!-- Hamburger Menu -->
+    <div class="hamburger-menu">
+        <div class="hamburger-icon" onclick="toggleMenu()">&#9776;</div>
+        <div class="menu-items" id="menu-items">
+            <ul>
+                <li><a href="home.html" id="home">HOME</a></li>
+                <li><a href="resume.html" id="resume">RESUME</a></li>
+                <li><a href="artwork.html" id="artwork">ARTWORK</a></li>
+                <li><a href="about.html" id="about">ABOUT</a></li>
+            </ul>
+        </div>
+    </div>
+
+    <script>
+        // Switch menu visibility
+        function toggleMenu() {
+            document.getElementById("menu-items").classList.toggle("active");
+        }
+
+        // Highlight current page on menu
+        window.onload = function () {
+            var currentPage = window.location.pathname.split('/').pop().split('.')[0];
+            var activeLink = document.getElementById(currentPage);
+            if (activeLink) activeLink.classList.add('active');
+        };
+    </script>
+</body>
+</html>
+<!-- END OF THE PAGE -->
+
+
+
+
+<!-- PRIMARY CONTENT -->
+ <br><br>
+    <body>
+        <img src="./images/home-portrait.png" width="400" height="400" alt="profile picture" style="border-left: 1.5px solid #5b5a5c; border-right: 1.5px solid #5b5a5c;">  
+        <br>
+        <h1>HELLO!</h1>
+        <h3>MY NAME IS LAURA,</h3>
+        <p>
+            a UX/UI designer dedicated to crafting user-centered experiences to blend functionality with beauty.
+        </p>
+
+
+
+
+<!-- SCROLL BUTTON -->
+<a href="#case-studies" class="scroll-button">
+    <scroll-button>MY WORKS BELOW ↓</scroll-button></a>
+
+
+
+
+<!-- CASE STUDIES SELECTION -->
+<div id="case-studies">
+</div>
+
+
+
+
+<!-- CASE STUDY 1 HOME -->
+<a href="casestudy1.html" class="case-study">
+    <button class="case-study-button1">
+        <!-- Image -->
+        <img src="./images/home-tt-1.png" alt="TODOIST" class="case-study-image">
+        
+        <!-- Button Text -->
+        <span class="case-study-title">TODOIST TASK MANG. APP</span>
+        <span class="case-study-description">
+            This project involves a thorough rework of the widely used task management app, 
+            Todoist. The app empowers users to efficiently create, organize, and prioritize tasks, 
+            boosting productivity and streamlining daily planning. Here, I outline its strengths and weaknesses.
+        </span>
+    </button>
+</a>
+
+
+
+
+<!-- CASE STUDY 2 HOME -->
+<a href="casestudy2.html" class="case-study">
+    <button class="case-study-button1">
+        <!-- Image -->
+        <img src="./images/home-tt-2.png" alt="STREET TAILS ANIMAL RESCUE WEBSITE" class="case-study-image">
+        
+        <!-- Button Text -->
+        <span class="case-study-title">STREET TAILS ANIMAL RESCUE WEBSITE
+            REDESIGN & MICRO INTERACTIONS</span>
+        <span class="case-study-description">
+            This is a redesign of a Philadelphian local animal shelter's website. The original website offers a warm, homely aesthetic 
+            that aligns with the organization's mission. Here, I include a micro interaction input and incorporate cross-device 
+            functionality.
+        </span>
+    </button>
+</a>
+
+
+
+
+<!-- CASE STUDY 3 HOME -->
+<a href="casestudy3.html" class="case-study">
+    <button class="case-study-button1">
+        <!-- Image -->
+        <img src="./images/home-tt-3.png" alt="Yale School of Art Case Study" class="case-study-image">
+        
+        <!-- Button Text -->
+        <span class="case-study-title">YALE SCHOOL OF ART BUTTON PLACEMENT ANALYSIS AND REMAPPING</span>
+        <span class="case-study-description">
+            This website enables current students to edit its images/colors at their convenience. While this is a commendable feature,
+            a remapping is needed due to the overall structure directly obstructing the ease of access for both existing and new visitors.
+        </span>
+    </button>
+</a>
+
+
+
+
+<!-- LINE FOR CONTACT -->
+<hr>
+<!-- CONTACT -->
+<br><div class="contact-section">
+<h2>CONTACT</h2>
+    <div class="divider"></div>
+    <div class="contact-info">
+    <p>Email: <a href="mailto:grauerlaura80@gmail.com">grauerlaura80@gmail.com</a></p>
+    <p class="linkedin">LinkedIn: <a href="https://www.linkedin.com/in/laura-grauer-807662286" target="_blank">LINKEDIN</a></p>
+    <p class="discord">Discord: <span>cowbone#9173</span></p>
+</div>
+</div>
+</body></html>

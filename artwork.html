@@ -1,0 +1,232 @@
+<!-- base for entire page -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Artwork</title>
+
+    <link rel="stylesheet" href="stylesheet.css">
+
+    <link rel="icon" href="art-digital-7.png" type="image/png">
+</head>
+<body>
+    <!-- Hamburger Menu -->
+    <div class="hamburger-menu">
+        <div class="hamburger-icon" onclick="toggleMenu()">&#9776;</div>
+        <div class="menu-items" id="menu-items">
+            <ul>
+                <li><a href="home.html" id="home">HOME</a></li>
+                <li><a href="resume.html" id="resume">RESUME</a></li>
+                <li><a href="artwork.html" id="artwork">ARTWORK</a></li>
+                <li><a href="about.html" id="about">ABOUT</a></li>
+            </ul>
+        </div>
+    </div>
+
+    <script>
+        // Switch menu visibility
+        function toggleMenu() {
+            document.getElementById("menu-items").classList.toggle("active");
+        }
+
+        // Highlight current page on menu
+        window.onload = function () {
+            var currentPage = window.location.pathname.split('/').pop().split('.')[0];
+            var activeLink = document.getElementById(currentPage);
+            if (activeLink) activeLink.classList.add('active');
+        };
+    </script>
+</body>
+</html>
+<!-- END OF THE PAGE -->
+
+
+
+
+<!-- Header Section -->    
+<br><br>
+<h1>ARTWORK</h1>
+        <p>I used to provide art commissions during my middle and high school years. Despite this somewhat early start, art remains one of my most enjoyable hobbies, and I plan to improve my skills every day—especially through my current position on the E-Board in Drexel CHI UX Club.</p>
+
+
+
+
+<!-- Traditional Art Section -->
+        <hr>
+        <h2>TRADITIONAL</h2>
+        <p>My traditional work is composed of a multitude of mediums, ranging from pencils to watercolor and acrylics.</p>
+    
+<!-- Traditional First Image Set -->
+        <div class="images-container">
+            <div class="image">
+                <img src="./images/art-traditional-2.png" alt="Traditional Artwork 1">
+            </div>
+            <div class="image">
+                <img src="./images/art-traditional-1.png" alt="Traditional Artwork 2">
+            </div>
+        </div>
+    
+<!-- Reset stack -->
+        <div class="clearfix"></div>
+<!-- Traditional Next Image Set -->
+<img src="./images/art-traditional-4.png" width="525" height="525" alt="profile picture"> 
+<!-- Traditional Next Image Set -->
+<img src="./images/art-traditional-5.png" width="525" height="525" alt="profile picture">  
+
+<!-- Traditional Next Image Set -->
+        <div class="images-container">
+            <div class="image">
+                <img src="./images/art-traditional-6.png" alt="Traditional Artwork 5">
+            </div>
+            <div class="image">
+                <img src="./images/art-traditional-3.png" alt="Traditional Artwork 6">
+            </div>
+        </div>
+
+
+
+
+<!-- Digital Art Section -->
+<br>
+<hr>
+<h2>DIGITAL</h2>
+<p>These were primarily created with a Wacom Cintiq 16 Drawing Tablet and: Photoshop, Lightroom, and Paint Tool Sai.</p>
+<!-- First Image Set -->
+<div class="images-container">
+    <div class="image">
+        <img src="./images/art-digital-1.png" alt="Traditional Artwork 1">
+    </div>
+    <div class="image">
+        <img src="./images/art-digital-2.png" alt="Traditional Artwork 2">
+    </div>
+</div>
+
+<!-- Reset stack -->
+<div class="clearfix"></div>
+
+<!-- Digital Next Image Set -->
+<img src="./images/art-digital-5.png" width="525" height="525" alt="profile picture"> 
+<!-- Digital Next Image Set -->
+<img src="./images/art-digital-9.png" width="525" height="525" alt="profile picture">  
+
+<!-- Digital Next Image Set -->
+        <div class="images-container">
+            <div class="image">
+                <img src="./images/art-digital-7.png" alt="Traditional Artwork 5">
+            </div>
+            <div class="image">
+                <img src="./images/art-digital-8.png" alt="Traditional Artwork 6">
+            </div>
+
+<!-- First Image Set -->
+    </div>
+    <div class="image">
+        <img src="./images/art-digital-6.png" alt="Traditional Artwork 2">
+    </div>
+
+<!-- Digital Next Image Set -->
+        <div class="images-container">
+            <div class="image">
+                <img src="./images/art-digital-4.png" alt="Traditional Artwork 5">
+            </div>
+            <div class="image">
+                <img src="./images/art-digital-3.png" alt="Traditional Artwork 6">
+            </div>
+        </div>
+
+<!-- Reset stack -->
+<div class="clearfix"></div>
+
+
+
+
+<!-- Photography -->
+<hr>
+<h2>PHOTOGRAPHY</h2>
+<p>With the use of the Canon Rebel, Photoshop, Lightroom, and Adobe Bridge, I was able to capture pictures of my pets in black and white!</p>
+
+<!-- Photo Image Sets -->
+</div>
+<div class="image">
+    <img src="./images/art-photo-2.png" alt="Traditional Artwork 2">
+</div>
+<div class="images-container">
+    <div class="image">
+        <img src="./images/art-photo-1.png" alt="Traditional Artwork 1">
+    </div>
+    <div class="image">
+        <img src="./images/art-photo-3.png" alt="Traditional Artwork 2">
+    </div>
+</div>
+
+<!-- Reset stack -->
+<div class="clearfix"></div>
+
+
+
+
+<!-- CLUB CHI -->
+<hr>
+<h2>DREXEL CHI EBOARD
+    GRAPHIC DESIGNER</h2>
+<p>Working with other eboard members, I had the ability to graphically design any upcoming events created by our club.</p>
+
+<!-- CLUB CHI Image Sets -->
+<div class="images-container">
+    <div class="image">
+        <img src="./images/art-club-2.png" alt="artclub">
+    </div>
+    <div class="image">
+        <img src="./images/art-club-1.png" alt="artclub">
+    </div>
+</div>
+<div class="images-container">
+    <div class="image">
+        <img src="./images/art-club-4.png" alt="artclub">
+    </div>
+    <div class="image">
+        <img src="./images/art-club-5.png" alt="artclub">
+    </div>
+</div>
+<div class="images-container">
+    <div class="image">
+        <img src="./images/art-club-6.png" alt="artclub">
+    </div>
+    <div class="image">
+        <img src="./images/art-club-7.png" alt="artclub">
+    </div>
+</div>
+<div class="images-container">
+    <div class="image">
+        <img src="./images/art-club-8.png" alt="artclub">
+    </div>
+    <div class="image">
+        <img src="./images/art-club-9.png" alt="artclub">
+    </div>
+</div>
+<div class="images-container">
+    <div class="image">
+        <img src="./images/art-club-10.png" alt="artclub">
+    </div>
+    <div class="image">
+        <img src="./images/art-club-3.png" alt="artclub">
+    </div>
+</div>
+
+
+
+
+<!-- LINE FOR CONTACT -->
+<hr>
+<!-- CONTACT -->
+<br><div class="contact-section">
+<h2>CONTACT</h2>
+    <div class="divider"></div>
+    <div class="contact-info">
+    <p>Email: <a href="mailto:grauerlaura80@gmail.com">grauerlaura80@gmail.com</a></p>
+    <p class="linkedin">LinkedIn: <a href="https://www.linkedin.com/in/laura-grauer-807662286" target="_blank">LINKEDIN</a></p>
+    <p class="discord">Discord: <span>cowbone#9173</span></p>
+</div>
+</div>
+</body></html>

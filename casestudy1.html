@@ -1,0 +1,302 @@
+<!-- base for entire page -->
+<!-- base for entire page -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ToDoist</title>
+
+    <link rel="stylesheet" href="stylesheet.css">
+
+    <link rel="icon" href="art-digital-7.png" type="image/png">
+</head>
+<body>
+    <!-- Hamburger Menu -->
+    <div class="hamburger-menu">
+        <div class="hamburger-icon" onclick="toggleMenu()">&#9776;</div>
+        <div class="menu-items" id="menu-items">
+            <ul>
+                <li><a href="home.html" id="home">HOME</a></li>
+                <li><a href="resume.html" id="resume">RESUME</a></li>
+                <li><a href="artwork.html" id="artwork">ARTWORK</a></li>
+                <li><a href="about.html" id="about">ABOUT</a></li>
+            </ul>
+        </div>
+    </div>
+
+    <script>
+        // Switch menu visibility
+        function toggleMenu() {
+            document.getElementById("menu-items").classList.toggle("active");
+        }
+
+        // Highlight current page on menu
+        window.onload = function () {
+            var currentPage = window.location.pathname.split('/').pop().split('.')[0];
+            var activeLink = document.getElementById(currentPage);
+            if (activeLink) activeLink.classList.add('active');
+        };
+    </script>
+</body>
+</html>
+<!-- END OF THE PAGE -->
+
+
+
+
+<!-- REBRANDING -->
+<br><br><body><br><h1>
+            TODOIST > TODO APP <br>
+            REBRANDING</h1><h3>
+
+            UI/UX/IX, User Research, Rebranding</h3>
+
+<div class="images-container">
+<div class="image">
+<img src="./images/todo-logo.png" alt="artclub"></div>
+<div class="image">
+<img src="./images/todoist-logo.png" alt="artclub"></div></div><h4>
+
+            OVERVIEW</h4><p>
+
+        This project focused on exploring the principles, patterns, and methods of interaction design. In my search for an app that could benefit
+         from a fresh approach, I selected the widely used task management tool, Todoist. Known for effectively organizing tasks, setting deadlines, 
+         and structuring projects into manageable sections, Todoist was an ideal candidate for enhancement.
+    <br><br>
+    In this rebranding, I aimed to improve Todoist’s usability and user engagement by emphasizing simplicity and feedback. After analyzing the app’s 
+    current navigation patterns, input controls, and onboarding flows, I identified several elements with room for improvement. As a result, I implemented 
+    a rebranding of the micro-interactions and overall interface to reduce cognitive load and create a more seamless, user-friendly experience.</p>
+
+
+
+
+<!-- GENERAL USERS -->
+<div class="custom-content-box">
+<br>
+<div class="images-container">
+<div class="image">
+<img src="./images/todoist-ss1.png" alt="todoapp">
+</div>
+<div class="image">
+<img src="./images/todoist-ss2.png" alt="todoapp2">
+</div>
+<div class="image">
+<img src="./images/todoist-ss3.png" alt="todoapp3">
+</div>
+</div>
+<div class="images-container">
+<div class="image">
+<img src="./images/todoist-ss4.png" alt="todoapp">
+</div>
+<div class="image">
+<img src="./images/todoist-ss5.png" alt="todoapp2">
+</div>
+<div class="image">
+<img src="./images/todoist-ss6.png" alt="todoapp3">
+</div>
+</div><h3>
+
+        TODOIST</h3><h4>
+
+        GENERAL USERS & USABILITY ANALYSIS</h4><p>
+
+        While Todoist is a highly popular task management app, it’s primarily designed with detail-oriented users in mind, such as those in corporate or 
+        academic settings. Its interface includes a wide range of advanced features, but this can sometimes feel overbearing for some users.</p></div><hr>
+
+<div class="custom-content-box">
+<p>While Todoist is a highly popular task management app, it’s primarily designed with detail-oriented users in mind, such as those in corporate or academic settings. 
+    Its interface includes a wide range of advanced features, but this can sometimes feel overbearing for some users.</p></div>
+
+
+
+
+<!-- TASK AND APPFLOW SECTION -->
+<body><br><br>
+<img src="./images/todoist-appflow.png" width="500" height="500" alt="appflow"">
+<img src="./images/todoist-taskflow.png" width="500" height="500" alt="taskflow""><br><h4>
+
+        TASK & APPFLOW</h4><p>
+
+        The original app’s task flow is functional, but there is potential for a more streamlined approach to text usage and button layout
+        that simplifies the process of creating and removing tasks.
+
+<br><br>
+        The number of buttons and options may lead to cognitive overload for users seeking a quick and straightforward experience. While 
+        triggers and interactions within this certain task are cohesive, some premium features require in-app purchases to unlock without 
+        prior indication.
+        This could create uncertainty for users who may expect complete functionality upon installation. Providing clearer access to 
+        premium features or indicating in-app purchases would enhance the transparency of the app’s functionality and pricing structure.
+
+<br><hr><p>
+        The same can go for the app flow as well. There are a large number of triggers needed to provide the 
+        following feedback, and they fall into the numerous menus displayed in the home location.
+        Users will have to spend time learning and familiarizing themselves with the location of each function.</p>
+
+
+
+
+<!-- WIREFRAMING -->
+<div class="custom-content-box">
+<body><br><br>
+    <img src="./images/todo-wireflow.png" width="500" height="500" alt="appflow"">
+    <img src="./images/todo-sketch1.png" width="500" height="500" alt="wiresketch""> 
+    <img src="./images/todo-sketch2.png" width="500" height="500" alt="wiresketch2""> 
+    <img src="./images/todo-sketch3.png" width="500" height="500" alt="wiresketch3""><br><h4>
+        WIREFRAMES & WIREFLOW</h4><p>
+
+        The initial creation of wireframes was needed to establish a clear foundation for the rebrand.
+
+        To make the app more accessible to a broader user base not accustomed to cognitively demanding interfaces, a simplified 
+        layout and format were essential. This restructuring aimed to minimize mental load, allowing users of varying backgrounds to 
+        navigate tasks quickly.
+
+<hr><div class="custom-content-box"><p>
+
+        To do so, I've created buttons with larger padding to enhance touch accuracy and ensure easy usability across different 
+        devices.This also contributes to a clean, uncluttered design that highlights key actions without an overwhelming feeling. 
+        change of task bar locations, as well as a simplification, was also implemented to reduce the cognitive load a user may experience.
+        As for the wire flow displayed, a simplification of feedback was constructed to offer a more efficient action and feedback method.
+
+<br><br>
+        Symbols were also implemented to give the user a better understanding of their action, as well as an undo button for 
+        incorrect action taken by the user.
+</div></p></div>
+
+
+
+
+<!-- REBRANDING -->
+<body><br>
+<img src="./images/todo-rebranding.png" width="500" height="500" alt="appflow""><br><h3>
+
+        RECONSTRUCTION</h3><h4>
+        DESIGN PROCESS</h4><p>
+
+        With a recreation of this app, I believed some areas held value. An example would be the well saturated colors the previous
+        program used in contrast to the monochrome background. This idea made way into the rebranding. The primary color was switched to
+        green though, as this specific color typically has a more positive association when comparison to red.
+
+<br><br>
+        To further accentuate divisions, I felt it was best to add more colors than previously, as well as simplification of text
+        to make it more convenient to the average individual. By incorporating the larger range of color options, users will be able to
+        associate a specific color with their subject and have an easier time finding their specific tasks.
+
+<br><br>
+        A change of the logo was also needed to correlate with the new color palette into this rebrand. To correspond with the 
+        idea of the common, organic to do list, I created a simple design of a note page. An additional clock icon was implemented as well
+        to indicate the time limit associated with this list.</p></body></div>
+
+
+
+
+<!-- IXFLOW -->
+<div class="custom-content-box">
+<body><br><br>
+<img src="./images/todo-ixflow.png" width="500" height="500" alt="appflow""><br><h4>
+        IXFLOW</h4><p><b>
+        STARTING THE SEARCH - </b> The returning user journey begins with a search action. The search bar
+        is positioned at the top of the mobile interface for clear affordance. This design choice helps the user quickly 
+        locate the search feature. A "0 Results" screen will appear if the text typed is unavailable. If the correct phrasing
+        is typed, 1 or more tasks will appear as a clickable option.
+
+<br><br><b>
+        SELECTING A TASK - </b>When the user’s search results display, they tap the specific item they need. 
+        This action triggers a description box, which appears with a color-coordinated background to enhance focus. The background
+        partially hides, and the chosen color fills the screen, creating a cohesive visual effect.
+        
+<br><br><b>
+        NAVIGATION - </b>The user can easily return to the previous page tapping the arrow button in the top left. 
+        Additionally, by selecting the “Inbox” or “Today” options, the user can access their task list.
+        
+<br><br><b>
+        COMPLETING A TASK -</b> To mark a task as complete, the user taps the circle next to the task title. This
+        triggers a checkmark icon and a confirmation modal that provides immediate feedback, asking if the task 
+        is confirmed as completed. Once confirmed, the task fades in transparency, shifts to the completed page, and the
+        other tasks adjust their positions, offering further feedback on the action. If accidently tapped, the user can 
+        choose the X icon and the position of the task will remain the same. This is a universal option for this menu.
+        
+<br><br><b>
+        DELETING A COMPLETED TASK -</b> If the user wants to fully delete a completed task, they navigate to the completed 
+        section. By clicking the X icon located in the left of the task description, they trigger a minimized animation of 
+        the task moving to the trash icon, indicating complete deletion.
+        
+<br><br><b>
+        MANAGING SUBJECT GROUPS -</b> Subject groups can be managed on the homepage. Using the “Remove Subject” option 
+        allows the user to delete a group, with adjacent groups filling in any empty space left behind. With this option 
+        clicked, an X icon will appear closely for all of the subjects. The user may choose which subject they would like 
+        to remove.
+        
+<br><br><b>
+        ADDING A NEW SUBJECT -</b> The “Add Subject” button, located above the “Remove Subject” button, opens a menu where
+            the user can customize the subject’s title, description, and color. The rule of colors is that there are six color
+            options; upon choosing a color, the background updates immediately, giving visual feedback on their selection.
+        
+<br><br><b>
+        ORGANIZING TASKS BY SUBJECT -</b> By clicking any subject, the user opens its dedicated folder, where tasks specific
+        to that subject are organized separately. Here, the user can add a task with fields for the title, description, date,
+        and time. If they accidentally add the task to the wrong subject, they can use an option to transfer the task to another
+        subject’s folder.</div></p></div>
+
+
+
+
+<!-- VIDEO FULL AREA -->
+<img src="./images/todo-logo.png" width="auto" height="auto" alt="profile picture" style="border-left: 1.5px solid #5b5a5c; border-right: 1.5px solid #5b5a5c;">  
+<br><head><style>
+.video-container {
+display: flex;
+justify-content: center;
+align-items: center;
+height: 40rem;
+}
+
+video {
+max-width: 100%; 
+height: 40rem;
+}
+
+</style></head><body>
+
+<!-- Video Container -->
+<div class="video-container">
+<video controls autoplay>
+<source src="./images/vid-todo-video.mp4" type="video/mp4">
+</video></div><br><h4>
+    
+        FINAL ANIMATION
+        
+</h4><p>
+        Using Figma, Premiere Pro, Photoshop, and Adobe Illustrator, I developed the final animation for the rebranded app.
+
+<br><br>
+        This version showcases a to-do list that removes unnecessary elements, incorporates a more contrasting 
+        color palette, and enhances micro interactions to create a more engaging user experience.
+
+<br><br>
+        Overall, the rebranding results in a simplified to-do list that prioritizes clarity and usability. 
+        This also caters more to users who prefer a more simplistic task management app while still giving 
+        certain specific task options implemented into the design.
+
+
+
+
+<!-- CASE STUDY BUTTONS -->        
+        <a href="casestudy2.html" class="case-study-button">STREET TAILS REDESIGN</a>
+        <a href="casestudy3.html" class="case-study-button">YALE REMAPPING</a></p>
+
+
+
+
+<!-- CONTACT -->
+<br><div class="contact-section">
+<h2>CONTACT</h2>
+    <div class="divider"></div>
+    <div class="contact-info">
+    <p>Email: <a href="mailto:grauerlaura80@gmail.com">grauerlaura80@gmail.com</a></p>
+    <p class="linkedin">LinkedIn: <a href="https://www.linkedin.com/in/laura-grauer-807662286" target="_blank">LINKEDIN</a></p>
+    <p class="discord">Discord: <span>cowbone#9173</span></p>
+</div>
+</div>
+</body></html>
+        

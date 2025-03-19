@@ -1,0 +1,72 @@
+<!-- base for entire page -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About</title>
+
+    <link rel="stylesheet" href="stylesheet.css">
+
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+</head>
+<body>
+    <!-- Hamburger Menu -->
+    <div class="hamburger-menu">
+        <div class="hamburger-icon" onclick="toggleMenu()">&#9776;</div>
+        <div class="menu-items" id="menu-items">
+            <ul>
+                <li><a href="home.html" id="home">HOME</a></li>
+                <li><a href="resume.html" id="resume">RESUME</a></li>
+                <li><a href="artwork.html" id="artwork">ARTWORK</a></li>
+                <li><a href="about.html" id="about">ABOUT</a></li>
+            </ul>
+        </div>
+    </div>
+
+    <script>
+        // Switch menu visibility
+        function toggleMenu() {
+            document.getElementById("menu-items").classList.toggle("active");
+        }
+
+        // Highlight current page on menu
+        window.onload = function () {
+            var currentPage = window.location.pathname.split('/').pop().split('.')[0];
+            var activeLink = document.getElementById(currentPage);
+            if (activeLink) activeLink.classList.add('active');
+        };
+    </script>
+</body>
+</html>
+<!-- END OF THE PAGE -->
+
+
+
+
+    <!-- ABOUT ME -->
+    <img src="./images/flower-about.png" width="450" height="450" alt="profile picture">  
+    <h1>ABOUT ME</h1>
+    <p>I am currently an undergraduate student at Drexel University, where I study User Experience and Interaction Design. Having spent 
+        part of my childhood in Indonesia, I developed a deep appreciation for cultural diversity. This experience has fueled my passion 
+        for creating user experiences that cater to the unique needs and preferences of all communities. I’ve enjoyed exploring a wide variety of perspectives, 
+        and I aspire to contribute meaningfully to the UX design field.</p>
+
+
+
+        
+    <!-- CONTACT SECTION -->
+    <div class="contact-section">
+        <h2>CONTACT</h2>
+        <div class="divider"></div>
+        <div class="contact-info">
+            <p>Email: <a href="mailto:grauerlaura80@gmail.com">grauerlaura80@gmail.com</a></p>
+            <p class="linkedin">LinkedIn: <a href="https://www.linkedin.com/in/laura-grauer-807662286" target="_blank">LINKEDIN</a></p>
+            <p class="discord">Discord: <span>cowbone#9173</span></p>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,190 @@
+<!-- base for entire page -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resume</title>
+
+    <link rel="stylesheet" href="stylesheet.css">
+
+    <link rel="icon" href="art-digital-7.png" type="image/png">
+</head>
+<body>
+    <!-- Hamburger Menu -->
+    <div class="hamburger-menu">
+        <div class="hamburger-icon" onclick="toggleMenu()">&#9776;</div>
+        <div class="menu-items" id="menu-items">
+            <ul>
+                <li><a href="home.html" id="home">HOME</a></li>
+                <li><a href="resume.html" id="resume">RESUME</a></li>
+                <li><a href="artwork.html" id="artwork">ARTWORK</a></li>
+                <li><a href="about.html" id="about">ABOUT</a></li>
+            </ul>
+        </div>
+    </div>
+
+    <script>
+        // Switch menu visibility
+        function toggleMenu() {
+            document.getElementById("menu-items").classList.toggle("active");
+        }
+
+        // Highlight current page on menu
+        window.onload = function () {
+            var currentPage = window.location.pathname.split('/').pop().split('.')[0];
+            var activeLink = document.getElementById(currentPage);
+            if (activeLink) activeLink.classList.add('active');
+        };
+    </script>
+</body>
+</html>
+<!-- END OF THE PAGE -->
+
+
+
+
+
+
+<!-- INTRRODUCTION -->
+<body>
+<br><br>
+<h1>RESUME</h1>
+<p>
+        This resume highlights the experience I've gained over the years, showcasing my skills and expertise.</p>
+        <a href="https://acrobat.adobe.com/id/urn:aaid:sc:VA6C2:8023833d-b3b5-4bec-8fbf-b93126499458?viewer%21megaVerb=group-discover" target="_blank">
+        <button class="custom-button link-button">PDF VERSION</button>
+</a></section>
+
+
+
+
+
+
+
+<!-- CHANGE OF BACKGROUND TO WHITE -->
+<style>
+.text-background {
+        background-color: #ffffff;
+        color: #000000;
+        padding: 1.3rem;
+}
+</style>
+</head>
+<body>
+
+
+
+
+ <!-- CONTACT -->
+<p class="text-background">Laura Grauer<br>
+267-974-5541<br>
+<a href="https://lauragrauer.com" target="_blank" class="link-style">lauragrauer.com</a> <br>
+        grauerlaura80@gmail.com<br>
+        Philadelphia PA 19148
+<br><br>
+
+
+
+
+ <!-- RESUME -->
+<b class="custom-bold">RESUME</b>
+<br>
+    Drexel University
+    Bachelor of Science in User Experience & Interaction Design
+<br>Anticipated Graduation - June 2028
+
+
+
+ <!-- SKILLS -->
+<br><br>
+<b class="custom-bold">SKILLS</b>
+<br>
+    Wireframing and Prototyping, Photoshop, Figma, Visual and Graphic Design, Entry-level Animation,
+    Entry-level Programming, Effective Communications, Interaction Design, Laser Cutting, Premier Pro
+
+
+
+<!-- EX{ERIENCE -->
+<br><br>
+<b class="custom-bold">EXPERIENCE</b>
+<br>
+<b>Free Lance</b><br>
+UI/ Graphic Designer<br>
+Philadelphia, Sep. 2023 - Present<br>
+• Collaborate with clients to design user interfaces, using wireframes to demonstrate the website development process<br>
+• Produce promotional material concepts, including posters and banners, to support marketing campaigns<br>
+• Deliver custom artwork for clients through commissions, tailoring designs to their specific needs<br><br>
+
+
+
+<!-- JOB 1 -->
+<b>Westphal Student Council</b>
+<br>Council Member
+<br>Philadelphia Oct. 2023 - Present
+<br>
+• Attend regular council meetings
+ to discuss and plan important initiatives
+<br>• Work with fellow council members to enhance the overall Westphal student experience
+<br>• Engage actively in events to promote community involvement
+<br>• Communicate to support and advance important initiatives
+<br><br>
+<b>Drexel CHI UX eBoard</b>
+<br>
+
+
+
+<!-- JOB 2 -->
+<b>Graphic Designer</b>
+<br>Philadelphia, March 2024 - Present
+<br>
+• Create appealing graphic designs in correlation to club-hosted events within a limited timeframe
+<br>• Discussion engagement with the marketing and media team for event creation
+<br>• Coordinate with other board sections to ensure smooth preparations
+<br><br>
+
+
+
+
+<!-- JOB 3 -->
+<b>Gia Pronto Kitchen</b>
+<br>Barista, Front of House
+<br>Philadelphia, July 2024 - Present
+<br>
+• Efficiently manage multiple tasks, including coffee preparation, salad assembly, and panini pressing
+<br>• Continuously restock and maintain cleanliness of front-of-house areas
+<br>• Assist customers and support team members as needed
+<br><br>
+
+
+
+
+<!-- ACTIVITIES -->
+<b class="custom-bold">Activities</b>
+<br><b>Digital/Traditional Art, </b>2015 - Present
+<br><b>Dog Walking, </b>2019 - Present
+<br><b>Care of Exotic Animals, </b>2018 - Present
+<br><b>Badminton, </b>2018 - Present
+<br><br>
+
+
+
+
+<!-- HONORS and AWARDS -->
+<b class="custom-bold">Honors & Awards</b>
+<br><b>Founder's Scholarship, </b>Drexel University, 2023 - Present
+<br><b>Westphal Portfolio Scholarship, </b>Drexel University, 2023 - Present
+
+
+
+
+<!-- CONTACT -->
+<div class="contact-section">
+    <h2>CONTACT</h2>
+    <div class="divider"></div>
+    <div class="contact-info">
+        <p>Email: <a href="mailto:grauerlaura80@gmail.com">grauerlaura80@gmail.com</a></p>
+        <p class="linkedin">LinkedIn: <a href="https://www.linkedin.com/in/laura-grauer-807662286" target="_blank">LINKEDIN</a></p>
+        <p class="discord">Discord: <span>cowbone#9173</span></p>
+    </div>
+</div>
