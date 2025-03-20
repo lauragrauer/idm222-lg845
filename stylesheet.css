@@ -307,7 +307,6 @@ hr {
 
 
 /* -------------------------------------------------------------------------------------------------------------------------- */
-/* CASE STUDY BUTTON */
 .case-study {
     text-decoration: none;
 }
@@ -322,7 +321,8 @@ hr {
     cursor: pointer;
     border-radius: 1rem;
     padding: 1rem;
-    margin-left: 1rem;
+    margin-left: 10px;
+    margin-right: 10px;
     margin-bottom: 1rem;
     margin-top: 1rem;
     text-align: left;
@@ -340,20 +340,33 @@ hr {
     background-color: #333;
 }
 
+/* Increase padding for desktop*/
+@media (min-width: 1280px) {
+    .case-study-button1 {
+        margin-left: 20%;
+        margin-right: 20%;
+        padding: 1.5rem 3rem;
+        flex-direction: row;
+    }
+}
+
 /* Image inside button */
 .case-study-image {
-    width: 550px;
-    height: 250px;
+    width: 100%;
+    height: 25rem;
     object-fit: cover;
     margin-bottom: 0.7rem;
+    border-radius: 1.5rem;
+    margin: 1rem;
 }
 
 /* Title Styling */
 .case-study-title {
-    font-size: 1.3rem;
-    font-weight: 700;
+    font-size: 1.5rem;
+    font-weight: 600;
     margin-bottom: 0.6rem;
-    line-height: 1.5rem;
+    line-height: 1.9rem;
+    margin: 1rem;
 }
 
 /* Description for Case Studies */
@@ -361,8 +374,7 @@ hr {
     font-size: 0.9rem;
     color: #cccccc;
     font-weight: 200;
-    margin-left: 0.3rem;
-    margin-right: 0.3rem;
-    line-height: 1.3rem;
+    margin: 1rem;
+    line-height: 1.5rem;
     padding: 0;
 }
