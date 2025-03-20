@@ -286,17 +286,6 @@ img {
     padding: 8px;
 }
 
-
-/* Images Container */
-.images-container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-wrap: wrap;
-    margin-bottom: 2rem;
-
-}
-
 /* -------------------------------------------------------------------------------------------------------------------------- */
 /* CONTACT SECTION */
 .contact-section {
@@ -489,3 +478,19 @@ hr {
     line-height: 1.5rem;
     padding: 0;
 }
+
+/* Container styling */
+.images-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px; /* Space between images */
+}
+
+.image img {
+    width: 100%;    /* Make images fill their containers */
+    max-width: auto; /* Set a maximum size */
+    height: auto;     /* Maintain aspect ratio */
+    object-fit: cover; /* Ensure consistent sizing */
+    border-radius: 8px; /* Optional: rounded corners for styling */
+}
+
