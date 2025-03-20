@@ -179,44 +179,6 @@ img {
 }
 
 /* -------------------------------------------------------------------------------------------------------------------------- */
-/* CONTACT SECTION */
-.contact-section {
-    text-align: left;
-    border-top: 1px solid #5A595B;
-    padding-top: 1rem; 
-}
-
-.contact-section h3 {
-    color: #FFFFFF;
-    margin-top: 0;
-    margin-bottom: 0.1rem;
-}
-
-.contact-info {
-    font-size: 1rem;
-    margin-bottom: 1rem;
-}
-
-.contact-info a {
-    color: #CCCCCC;
-    font-weight: 500;
-    line-height: 0.5;
-    text-decoration: none;
-}
-
-.contact-info a:hover {
-    color: #FFFFFF;
-}
-
-.contact-info .linkedin,
-.contact-info .discord {
-    display: block;
-    margin-bottom: 0.1px;
-    margin-top: 0.1px;
-}
-
-
-/* -------------------------------------------------------------------------------------------------------------------------- */
 /* HORIZONTAL LINE */
 hr {
     border: 0;
@@ -400,4 +362,67 @@ hr {
     margin: 1rem;
     line-height: 1.5rem;
     padding: 0;
+}
+
+/* CONTACT */
+/* CONTACT SECTION */
+.contact-section {
+    background-color: #242325;
+    padding: 2rem;
+    border-radius: 8px;
+    margin-top: 2rem;
+    color: #fff;
+}
+
+.contact-section h2 {
+    font-size: 1.2rem;
+    color: #ffffff;
+    margin-bottom: 1rem;
+    text-align: center;
+}
+
+.divider {
+    width: 50%;
+    height: 1px;
+    background-color: #5A595B;
+    margin: 0.5rem auto 1.5rem auto;
+}
+
+/* Contact Info */
+.contact-info p {
+    font-size: 1rem;
+    color: #D7DBDD;
+    margin-bottom: 0.8rem;
+    text-align: center;
+}
+
+.contact-info .contact-link {
+    color: #AF0E31;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.contact-info .contact-link:hover {
+    color: #D9112A;
+    text-decoration: underline;
+}
+
+.contact-info .discord span {
+    font-weight: bold;
+    color: #D7DBDD;
+}
+
+/* Mobile Adjustments */
+@media (max-width: 768px) {
+    .contact-section {
+        padding: 1rem;
+    }
+
+    .contact-info p {
+        font-size: 1.2rem;
+    }
+
+    .contact-section h2 {
+        font-size: 1.5rem;
+    }
 }
