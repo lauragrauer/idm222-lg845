@@ -43,10 +43,8 @@ body {
 
 /* H1 */
 h1 {
-    margin-left: 5rem;
-    margin-right: 5rem;
-    padding-left: 10rem;
-    padding-right: 10rem;
+    padding-left: 3rem;
+    padding-right: 5rem;
     font-size: 2rem;
     color: #ffffff;
     margin-top: 0;
@@ -279,11 +277,11 @@ h4 {
 /* IMAGES */
 img {
     display: block;
-    margin-left: auto;
-    margin-right: auto;
+    margin: 0 auto;  /* Center the image with no extra spacing */
     max-width: 100%;
+    min-width: 200px; 
     height: auto;
-    padding: 8px;
+    padding: 4px;     /* Reduce padding */
 }
 
 /* -------------------------------------------------------------------------------------------------------------------------- */
@@ -480,17 +478,20 @@ hr {
 }
 
 /* Container styling */
-.images-container {
+.image-container {
     display: flex;
-    justify-content: center;
-    gap: 20px; /* Space between images */
+    justify-content: flex-start;
+    gap: 15px;
+    flex-wrap: wrap;
 }
 
-.image img {
-    width: 100%;    /* Make images fill their containers */
-    max-width: auto; /* Set a maximum size */
-    height: auto;     /* Maintain aspect ratio */
-    object-fit: cover; /* Ensure consistent sizing */
-    border-radius: 8px; /* Optional: rounded corners for styling */
+/* Image styling */
+.images-container {
+    display: flex;
+    flex-wrap: wrap; 
+    justify-content: center;
+    gap: 5px;        /* Decrease the gap between images */
+    margin: 0;        /* Remove additional margins */
+    padding: 0; 
 }
 
