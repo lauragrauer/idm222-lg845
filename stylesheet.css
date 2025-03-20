@@ -483,6 +483,8 @@ hr {
     justify-content: flex-start;
     gap: 15px;
     flex-wrap: wrap;
+    margin: 0;
+    padding: 0; 
 }
 
 /* Image styling */
@@ -490,8 +492,8 @@ hr {
     display: flex;
     flex-wrap: wrap; 
     justify-content: center;
-    gap: 5px;        /* Decrease the gap between images */
-    margin: 0;        /* Remove additional margins */
+    gap: 5px;
+    margin: 0;
     padding: 0; 
 }
 
