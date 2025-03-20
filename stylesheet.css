@@ -277,11 +277,10 @@ h4 {
 /* IMAGES */
 img {
     display: block;
-    margin: 0 auto;  /* Center the image with no extra spacing */
-    max-width: 100%;
-    min-width: 200px; 
+    margin: 0 auto; 
+    max-width: 200%; 
     height: auto;
-    padding: 4px;     /* Reduce padding */
+    padding: 2px;
 }
 
 /* -------------------------------------------------------------------------------------------------------------------------- */
@@ -386,22 +385,6 @@ hr {
     width: 100%;
     text-align: left;  
 }
-
-/* ART STACK */
-.images-container {
-    display: flex;
-    justify-content: center; 
-    align-items: center;
-    gap: 10px;
-    margin-left: auto;
-    margin-right: auto;
-    margin-bottom: 0.5px;
-    margin-top: 0.5px;
-    max-width: 100%;
-    height: auto;
-    padding: 8px;
-}
-
 
 /* -------------------------------------------------------------------------------------------------------------------------- */
 /* CASE STUDY BUTTON */
