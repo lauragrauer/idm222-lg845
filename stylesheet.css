@@ -233,15 +233,22 @@ hr {
     background-color: #AF0E31;
     color: #FFFFFF;
     border-radius: 1rem;
-    padding: 3rem 5rem;
+    padding: 3rem 2rem; /* Reduced right and left padding to 2rem */
     margin-top: 2rem;
-    margin-left: 4rem;
-    margin-right: 4rem;
-    margin-bottom: 4rem;
+    margin-left: 2rem;
+    margin-right: 2rem;
+    margin-bottom: 5rem;
     display: block;
     text-align: center;
     cursor: pointer;
     text-decoration: none;
+}
+
+@media (min-width: 1024px) {
+    .scroll-button {
+        margin-left: 40rem;
+        margin-right: 40rem;
+    }
 }
 
 .scroll-button:hover {
@@ -260,6 +267,13 @@ hr {
     text-decoration: none;
     display: block;
     margin: 2.8rem auto;
+}
+
+@media (min-width: 1024px) {
+    .case-study-button {
+        margin-left: 40rem;
+        margin-right: 40rem;
+    }
 }
 
 .case-study-button:hover {
