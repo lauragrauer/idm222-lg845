@@ -7,85 +7,57 @@
     <title>Artwork</title>
 
     <link rel="stylesheet" href="stylesheet.css">
-
     <link rel="icon" href="art-digital-7.png" type="image/png">
 </head>
 <body>
-    <!-- Hamburger Menu -->
-    <div class="hamburger-menu">
-        <div class="hamburger-icon" onclick="toggleMenu()">&#9776;</div>
-        <div class="menu-items" id="menu-items">
-            <ul>
-                <li><a href="home.html" id="home">HOME</a></li>
-                <li><a href="resume.html" id="resume">RESUME</a></li>
-                <li><a href="artwork.html" id="artwork">ARTWORK</a></li>
-                <li><a href="about.html" id="about">ABOUT</a></li>
-            </ul>
-        </div>
+
+<!-- Hamburger Menu -->
+<div class="hamburger-menu">
+    <div class="hamburger-icon" onclick="toggleMenu()">&#9776;</div>
+    <div class="menu-items" id="menu-items">
+        <ul>
+            <li><a href="home.html" id="home">HOME</a></li>
+            <li><a href="resume.html" id="resume">RESUME</a></li>
+            <li><a href="artwork.html" id="artwork">ARTWORK</a></li>
+            <li><a href="about.html" id="about">ABOUT</a></li>
+        </ul>
     </div>
+</div>
 
-    <script>
-        // Switch menu visibility
-        function toggleMenu() {
-            document.getElementById("menu-items").classList.toggle("active");
-        }
-
-        // Highlight current page on menu
-        window.onload = function () {
-            var currentPage = window.location.pathname.split('/').pop().split('.')[0];
-            var activeLink = document.getElementById(currentPage);
-            if (activeLink) activeLink.classList.add('active');
-        };
-    </script>
-</body>
-</html>
-<!-- END OF THE PAGE -->
-
-
-
-
-<!-- Header Section -->    
+<!-- Header Section -->
 <br><br>
 <h1 style="text-align: center;">DIGITAL</h1>
 
 <!-- DIGITAL First Image Set -->
-        <div class="images-container">
-            <div class="image">
-                <img src="./images/art-digital-1.webp" alt="Digital Artwork 1">
-            </div>
-            <div class="image">
-                <img src="./images/art-digital-2.webp" alt="Digital Artwork 2">
-            </div>
-        </div>
-        <div class="images-container">
-            <div class="image">
-                <img src="./images/art-digital-3.webp" alt="Digital Artwork 1">
-            </div>
-            <div class="image">
-                <img src="./images/art-digital-5.webp" alt="Digital Artwork 2">
-            </div>
-        </div>
+<div class="images-container">
+    <div class="image">
+        <img src="./images/art-digital-1.webp" alt="Digital Artwork 1">
     </div>
-    <div class="images-container">
-        <div class="image">
-            <img src="./images/art-digital-4.webp" alt="Digital Artwork 1">
-        </div>
-        <div class="image">
-            <img src="./images/art-digital-6.webp" alt="Digital Artwork 2">
-        </div>
+    <div class="image">
+        <img src="./images/art-digital-2.webp" alt="Digital Artwork 2">
     </div>
-    
-
-
-
-
-
-
+</div>
+<div class="images-container">
+    <div class="image">
+        <img src="./images/art-digital-3.webp" alt="Digital Artwork 3">
+    </div>
+    <div class="image">
+        <img src="./images/art-digital-5.webp" alt="Digital Artwork 4">
+    </div>
+</div>
+<div class="images-container">
+    <div class="image">
+        <img src="./images/art-digital-4.webp" alt="Digital Artwork 5">
+    </div>
+    <div class="image">
+        <img src="./images/art-digital-6.webp" alt="Digital Artwork 6">
+    </div>
+</div>
 
 <!-- Traditional Art Section -->
 <hr><br><br>
 <h1 style="text-align: center;">TRADITIONAL</h1>
-<!-- First Image Set -->
+
 <div class="images-container">
     <div class="image">
         <img src="./images/art-traditional-1.webp" alt="Traditional Artwork 1">
@@ -96,7 +68,7 @@
 </div>
 <div class="images-container">
     <div class="image">
-        <img src="./images/art-traditional-3.webp" alt="Traditional Artwork 1">
+        <img src="./images/art-traditional-3.webp" alt="Traditional Artwork 3">
     </div>
 </div>
 
@@ -104,59 +76,69 @@
 <hr><br><br>
 <h1 style="text-align: center;">PHOTOGRAPHY</h1>
 
-<!-- Photo Image Sets -->
-</div>
-<div class="image">
-    <img src="./images/art-photo-2.png" alt="Traditional Artwork 2">
-</div>
-<img src="./images/art-photo-1.png" alt="Traditional Artwork 1">
+<div class="images-container">
+    <div class="image">
+        <img src="./images/art-photo-1.png" alt="Photography 1">
+    </div>
+    <div class="image">
+        <img src="./images/art-photo-2.png" alt="Photography 2">
     </div>
 </div>
-
-<!-- Reset stack -->
-<div class="clearfix"></div>
-
-
-
 
 <!-- CLUB CHI -->
 <hr><br><br>
 <h1 style="text-align: center;">DREXEL CHI GRAPHIC DESIGNER</h1>
 
-<!-- CLUB CHI Image Sets -->
 <div class="images-container">
     <div class="image">
-        <img src="./images/art-club-1.png" alt="Traditional Artwork 1">
+        <img src="./images/art-club-1.png" alt="CHI Artwork 1">
     </div>
     <div class="image">
-        <img src="./images/art-club-2.png" alt="Traditional Artwork 2">
+        <img src="./images/art-club-2.png" alt="CHI Artwork 2">
     </div>
 </div>
 <div class="images-container">
     <div class="image">
-        <img src="./images/art-club-3.png" alt="Traditional Artwork 3">
+        <img src="./images/art-club-3.png" alt="CHI Artwork 3">
     </div>
     <div class="image">
-        <img src="./images/art-club-4.png" alt="Traditional Artwork 4">
+        <img src="./images/art-club-4.png" alt="CHI Artwork 4">
     </div>
 </div>
 <div class="images-container">
     <div class="image">
-        <img src="./images/art-club-5.png" alt="Traditional Artwork 5">
+        <img src="./images/art-club-5.png" alt="CHI Artwork 5">
     </div>
 </div>
-
-
-
 
 <!-- CONTACT -->
-<br><div class="contact-section">
-<h2 style="text-align: center;">CONTACT</h2>
+<br>
+<div class="contact-section">
+    <h2 style="text-align: center;">CONTACT</h2>
     <div class="divider"></div>
     <div class="contact-info">
-    <p>Email: <a href="mailto:grauerlaura80@gmail.com">grauerlaura80@gmail.com</a></p>
-    <p class="linkedin">LinkedIn: <a href="https://www.linkedin.com/in/laura-grauer-807662286" target="_blank">LINKEDIN</a></p>
-    <p class="discord">Discord: <span>cowbone#9173</span></p>
+        <p>Email: <a href="mailto:grauerlaura80@gmail.com">grauerlaura80@gmail.com</a></p>
+        <p class="linkedin">LinkedIn: 
+            <a href="https://www.linkedin.com/in/laura-grauer-807662286" target="_blank">LINKEDIN</a>
+        </p>
+        <p class="discord">Discord: <span>cowbone#9173</span></p>
+    </div>
 </div>
-</div>
-</body></html>
+
+<!-- JavaScript -->
+<script>
+    // Switch menu visibility
+    function toggleMenu() {
+        document.getElementById("menu-items").classList.toggle("active");
+    }
+
+    // Highlight current page on menu
+    window.onload = function () {
+        var currentPage = window.location.pathname.split('/').pop().split('.')[0];
+        var activeLink = document.getElementById(currentPage);
+        if (activeLink) activeLink.classList.add('active');
+    };
+</script>
+
+</body>
+</html>
