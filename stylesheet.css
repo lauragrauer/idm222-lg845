@@ -211,7 +211,8 @@ img {
 .contact-info .linkedin,
 .contact-info .discord {
     display: block;
-    margin-bottom: 2px;
+    margin-bottom: 0.1px;
+    margin-top: 0.1px;
 }
 
 
