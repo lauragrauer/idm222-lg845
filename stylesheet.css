@@ -15,74 +15,6 @@
     margin-right: 1rem;    
 }
 
-/* TEXT */
-p {
-    margin-left: 2rem;
-    margin-right: 2rem;
-    font-size: 1.1rem;
-    margin-top: 1rem;
-    line-height: 1.8;
-    letter-spacing: 0.06rem;
-    color: #CCCCCC;
-    padding-left: 2rem;
-    padding-right: 2rem;
-}
-
-@media (min-width: 1280px) {
-    p {
-        margin-left: 10rem; /* Increase left margin */
-        margin-right: 10rem; /* Increase right margin */
-        margin-top: 1.5rem; /* Increase top margin */
-    }
-}
-
-/* BODY */
-body {
-    background-color: #19191a;
-    font-family: 'Montserrat', sans-serif;
-    margin: 1rem; /* Removed the second body declaration */
-}
-
-/* H1 */
-h1 {
-    padding-left: 3rem;
-    padding-right: 3rem;
-    font-size: 2rem;
-    color: #ffffff;
-    margin-top: 0;
-    margin-bottom: 0.1rem;
-}
-
-/* H2 */
-h2 {
-    margin-left: 1rem;
-    margin-right: 1rem;
-    font-size: 1.3rem;
-    color: #D7DBDD;
-    margin-top: 0.01rem;
-    margin-bottom: 0.01rem;
-}
-
-/* H3 */
-h3 {
-    margin-left: 1rem;
-    margin-right: 1rem;
-    font-size: 1.3rem;
-    color: #7D7D7D;
-    margin-top: 0.01rem;
-    margin-bottom: 0.01rem;
-}
-
-/* H4 */
-h4 {
-    margin-left: 1rem;
-    margin-right: 1rem;
-    font-size: 1.7rem;
-    color: #FFFFFF;
-    margin-top: 0.01rem;
-    margin-bottom: 0.01rem;
-}
-
 /* -------------------------------------------------------------------------------------------------------------------------- */
 /* HAMBURGER MENU */
 .hamburger-menu {
@@ -145,162 +77,133 @@ h4 {
     color: #FFFFFF;
 }
 
-/* Show menu when active */
-.menu-items.active {
-    right: 0;
-}
-
-/* DESKTOP VERSION*/
-@media (min-width: 1280px) {
-    .hamburger-icon {
-        display: none; /* HIDE HAMBURGER FOR DESKTOP */
-    }
-
-    .menu-items {
-        position: static;
-        width: 100%;
-        height: auto;
-        display: flex;
-        justify-content: space-around;
-        flex-direction: row;
-        background-color: transparent;
-        border: none;
-        box-shadow: none;
-        padding: 1rem;
-        padding-left: 2rem;
-        padding-right: 2rem;
-    }
-
-    .menu-items ul {
-        display: flex;
-        justify-content: space-around;
-        width: 100%;
-        padding: 0;
-        margin: 0;
-        padding-left: 2rem;
-        padding-right: 2rem;
-    }
-
-    .menu-items ul li {
-        margin: 0 5rem; /* CHANGED SPACING */
-        padding-left: 2rem;
-        padding-right: 2rem;
-    }
-
-    .menu-items a {
-        color: #FFFFFF;
-        font-size: 1.2rem;
-        transition: background-color 0.3s ease, color 0.3s ease;
-        border-radius: 5px;
-        text-align: center;
-        padding-left: 2rem;
-        padding-right: 2rem;
-    }
-
-    .menu-items a:hover {
-        background-color: #252525;
-        color: #AF0E31;
-        padding-left: 2rem;
-        padding-right: 2rem;
-    }
-
-    /* Active link style */
-    .menu-items a.active {
-        background-color: #AF0E31;
-        color: #FFFFFF;
-        padding-left: 2rem;
-        padding-right: 2rem;
-    }
-}
-
-/* Mobile Version (max-width 768px) */
-@media (min-width: 768px) and (max-width: 1194px) {
-    .menu-items {
-        width: 65%;
-        border-radius: 8px 0 0 8px;
-        padding: 20px;
-    }
-
-    .menu-items a {
-        font-size: 5rem;
-        padding: 400px;
-        text-align: center;
-    }
-
-    .menu-items a:hover {
-        background-color: #444444;
-        color: #AF0E31;
-        border-bottom: 1px solid #AF0E31;
-    }
-
-    .menu-items ul li {
-        margin-bottom: 20px; /* Adds spacing between items on mobile */
-    }
-}
-
-/* Bar links */
-.menu-items ul {
-    list-style: none;
-    padding: 0;
-    text-align: center;
-}
-
-.menu-items li {
-    margin: 25px 0; /* Vertical spacing for items */
-}
-
-.menu-items a {
-    text-decoration: none;
-    color: #FFFFFF;
-    font-size: 1.2rem;
-    padding: 65px 0;
-    display: block;
-    transition: background-color 0.3s ease;
-    border-bottom: 1px solid #5A595B;
+/* Hover if possible for mobile */
+.menu-items a:hover {
+    background-color: #444444;
 }
 
 /* Show menu when active */
 .menu-items.active {
     right: 0;
 }
-
-* {
+/* -------------------------------------------------------------------------------------------------------------------------- */
+/* TEXT */
+p {
     margin-left: 2rem;
     margin-right: 2rem;
-    box-sizing: border-box;
+    font-size: 1rem;
+    margin-top: 1rem;
+    line-height: 1.5;
+    color: #CCCCCC;
 }
 
-/* Exclude the task bar or any specific element */
-.menu-items, .hamburger-menu, .hamburger-icon:hover, .hamburger-menu, menuitem, .menu-items.active {
-    margin: 0; 
-    padding: 0;
+/* BODY */
+body {
+    background-color: #19191a;
+    font-family: 'Montserrat', sans-serif;
+    margin: 1rem; /* Removed the second body declaration */
 }
+
+/* H1 */
+h1 {
+    margin-left: 1rem;
+    margin-right: 1rem;
+    font-size: 2rem;
+    color: #ffffff;
+    margin-top: 0;
+    margin-bottom: 0.1rem;
+}
+
+/* H2 */
+h2 {
+    margin-left: 1rem;
+    margin-right: 1rem;
+    font-size: 1.3rem;
+    color: #D7DBDD;
+    margin-top: 0.01rem;
+    margin-bottom: 0.01rem;
+}
+
+/* H3 */
+h3 {
+    margin-left: 1rem;
+    margin-right: 1rem;
+    font-size: 1.3rem;
+    color: #7D7D7D;
+    margin-top: 0.01rem;
+    margin-bottom: 0.01rem;
+}
+
+/* H4 */
+h4 {
+    margin-left: 1rem;
+    margin-right: 1rem;
+    font-size: 1.7rem;
+    color: #FFFFFF;
+    margin-top: 0.01rem;
+    margin-bottom: 0.01rem;
+}
+
 /* -------------------------------------------------------------------------------------------------------------------------- */
 /* IMAGES */
 img {
     display: block;
-    margin: 1px auto; 
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 100%;
+    height: auto;
+    padding: 8px;
+}
 
-    padding: 2px;
+
+.images-container {
+    width: 100%;
+    max-width: 100%; 
+    padding: 1rem; 
+    box-sizing: border-box; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
 }
 
 /* -------------------------------------------------------------------------------------------------------------------------- */
 /* CONTACT SECTION */
 .contact-section {
-    text-align: center;
+    text-align: left;
     border-top: 1px solid #5A595B;
-    padding-top: 1rem;
-    line-height: 2px;
+    padding-top: 1rem; 
+}
+
+.contact-section h3 {
+    color: #FFFFFF;
+    margin-top: 0;
+    margin-bottom: 0.1rem;
+}
+
+.contact-info {
+    font-size: 1rem;
+    margin-bottom: 1rem;
 }
 
 .contact-info a {
     color: #CCCCCC;
+    font-weight: 500;
+    line-height: 0.5;
     text-decoration: none;
 }
 
 .contact-info a:hover {
     color: #FFFFFF;
 }
+
+.contact-info .linkedin,
+.contact-info .discord {
+    display: block;
+    margin-bottom: 2px;
+}
+
+
 /* -------------------------------------------------------------------------------------------------------------------------- */
 /* HORIZONTAL LINE */
 hr {
@@ -318,15 +221,15 @@ hr {
     background-color: #AF0E31;
     color: #FFFFFF;
     border-radius: 1rem;
-    padding: 3rem 3rem;
-    margin-top: 1rem;
-    margin-left: auto;
-    margin-right: auto; 
-    margin-bottom: 1rem;
+    padding: 3rem 5rem;
+    margin-top: 2rem;
+    margin-left: 4rem;
+    margin-right: 4rem;
+    margin-bottom: 4rem;
     display: block;
+    text-align: center;
     cursor: pointer;
     text-decoration: none;
-    text-align: center;
 }
 
 .scroll-button:hover {
@@ -357,20 +260,18 @@ hr {
     background-color: #AF0E31;
     color: #FFFFFF; 
     border-radius: 0.9rem;
-    padding: 3rem 3rem;
+    padding: 3rem 6rem;
     text-align: center;
     cursor: pointer;
     text-decoration: none;
     display: block; 
-    margin: 0.5rem auto; 
+    margin: 2rem auto; 
     width: max-content; 
 }
 
 .custom-button:hover {
     background-color: #D9112A;
 }
-
-
 
 /* -------------------------------------------------------------------------------------------------------------------------- */
 /* CUSTOM CUSTOM */
@@ -380,12 +281,30 @@ hr {
     color: #19191A;
     font-size: 1.3rem;
     padding: 0.5rem;
-    margin-left: 0.01rem;
     border-top: 2px solid #19191A;
     border-bottom: 2px solid #19191A; 
     width: 100%;
     text-align: left;  
 }
+
+/* ART STACK */
+.images-container {
+    display: flex;
+    justify-content: center; 
+    align-items: center;
+    gap: 10px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 0.5px;
+    margin-top: 0.5px;
+    max-width: 100%;
+    height: auto;
+    padding: 8px;
+}
+
+
+
+
 
 /* -------------------------------------------------------------------------------------------------------------------------- */
 /* CASE STUDY BUTTON */
@@ -403,8 +322,7 @@ hr {
     cursor: pointer;
     border-radius: 1rem;
     padding: 1rem;
-    margin-left: 10px;
-    margin-right: 10px;
+    margin-left: 1rem;
     margin-bottom: 1rem;
     margin-top: 1rem;
     text-align: left;
@@ -422,33 +340,20 @@ hr {
     background-color: #333;
 }
 
-/* Increase padding for desktop*/
-@media (min-width: 1280px) {
-    .case-study-button1 {
-        margin-left: 20%;
-        margin-right: 20%;
-        padding: 1.5rem 3rem;
-        flex-direction: row;
-    }
-}
-
 /* Image inside button */
 .case-study-image {
-    width: 100%;
-    height: 25rem;
+    width: 550px;
+    height: 250px;
     object-fit: cover;
     margin-bottom: 0.7rem;
-    border-radius: 1.5rem;
-    margin: 1rem;
 }
 
 /* Title Styling */
 .case-study-title {
-    font-size: 1.5rem;
-    font-weight: 600;
+    font-size: 1.3rem;
+    font-weight: 700;
     margin-bottom: 0.6rem;
-    line-height: 1.9rem;
-    margin: 1rem;
+    line-height: 1.5rem;
 }
 
 /* Description for Case Studies */
@@ -456,28 +361,8 @@ hr {
     font-size: 0.9rem;
     color: #cccccc;
     font-weight: 200;
-    margin: 1rem;
-    line-height: 1.5rem;
+    margin-left: 0.3rem;
+    margin-right: 0.3rem;
+    line-height: 1.3rem;
     padding: 0;
 }
-
-/* Container styling */
-.image-container {
-    display: flex;
-    justify-content: flex-start;
-    gap: 15px;
-    flex-wrap: wrap;
-    margin: 0;
-    padding: 0; 
-}
-
-/* Image styling */
-.images-container {
-    display: flex;
-    flex-wrap: wrap; 
-    justify-content: center;
-    gap: 5px;
-    margin: 0;
-    padding: 0; 
-}
-
