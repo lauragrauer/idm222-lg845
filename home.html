@@ -1,6 +1,7 @@
 <!-- Base for entire page -->
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -31,19 +32,18 @@
 
         // Highlight current page on menu
         window.onload = function () {
-            var currentPage = window.location.pathname.split('/').pop().split('.')[0];
-            var activeLink = document.getElementById(currentPage);
+            const currentPage = window.location.pathname.split('/').pop().split('.')[0];
+            const activeLink = document.getElementById(currentPage);
             if (activeLink) activeLink.classList.add('active');
         };
     </script>
 
     <!-- PRIMARY CONTENT -->
     <div style="background-color: #222222; padding: 2rem; width: 100%; margin: 0 auto;">
-        <img src="./images/home-portrait.webp" width="600" height="600" alt="profile picture" 
-            style="border-left: 1.5px solid #5b5a5c; border-right: 1.5px solid #5b5a5c; border-radius: 50%; margin-bottom: 1rem;">  
+        <img src="./images/home-portrait.webp" width="600" height="600" alt="profile picture"
+            style="border-left: 1.5px solid #5b5a5c; border-right: 1.5px solid #5b5a5c; border-radius: 50%; margin-bottom: 1rem;">
 
         <h1 style="font-size: 2.5rem; margin: 0.5rem 0;">HELLO!</h1>
-
         <h3 style="font-size: 1.8rem; margin: 0.5rem 0;">MY NAME IS LAURA,</h3>
 
         <p style="font-size: 1.1rem; line-height: 1.6;">
@@ -62,10 +62,7 @@
     <!-- CASE STUDY 1 HOME -->
     <a href="casestudy1.html" class="case-study">
         <button class="case-study-button1">
-            <!-- Image -->
             <img src="./images/home-tt-1.webp" alt="TODOIST" class="case-study-image">
-            
-            <!-- Button Text -->
             <span class="case-study-title">TODOIST APP REDESIGN</span>
             <span class="case-study-description">
                 This project involves a thorough rework of the widely used task management app, Todoist. The app empowers users to efficiently create, organize, and prioritize tasks, boosting productivity and streamlining daily planning. Here, I outline its strengths and weaknesses.
@@ -76,10 +73,7 @@
     <!-- CASE STUDY 2 HOME -->
     <a href="casestudy2.html" class="case-study">
         <button class="case-study-button1">
-            <!-- Image -->
             <img src="./images/home-tt-2.webp" alt="STREET TAILS" class="case-study-image">
-            
-            <!-- Button Text -->
             <span class="case-study-title">STREET TAILS WEBSITE REDESIGN</span>
             <span class="case-study-description">
                 This is a redesign of a Philadelphian local animal shelter's website. The original website offers a warm, homely aesthetic that aligns with the organization's mission. Here, I include a micro interaction input and incorporate cross-device functionality.
@@ -99,4 +93,5 @@
     </div>
 
 </body>
+
 </html>
