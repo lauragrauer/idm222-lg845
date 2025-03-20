@@ -44,7 +44,7 @@ body {
 /* H1 */
 h1 {
     padding-left: 3rem;
-    padding-right: 5rem;
+    padding-right: 3rem;
     font-size: 2rem;
     color: #ffffff;
     margin-top: 0;
@@ -279,10 +279,8 @@ img {
     display: block;
     margin: 1px auto; 
     max-width: 100%;
-    min-block-size: 100%;  
-    height: auto; 
+    min-height: 100%; 
     padding: 2px;
-    box-sizing: border-box;
 }
 
 /* -------------------------------------------------------------------------------------------------------------------------- */
