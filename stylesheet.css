@@ -143,7 +143,17 @@ h4 {
     margin-top: 0.01rem;
     margin-bottom: 0.01rem;
 }
+@media (min-width: 1024px) {
+    p {
+        padding-inline-start: 15%; /* Adjust padding for larger screens */
+        padding-inline-end: 15%;
+    }
 
+    h1, h2, h3, h4 {
+        padding-inline-start: 15%; /* Adjust padding for headings */
+        padding-inline-end: 15%;
+    }
+}
 /* -------------------------------------------------------------------------------------------------------------------------- */
 /* IMAGES */
 img {
@@ -242,7 +252,7 @@ hr {
     background-color: #AF0E31;
     color: #FFFFFF;
     border-radius: 0.5rem;
-    padding: 3rem 5rem;
+    padding: 3rem 3rem;
     text-align: center;
     cursor: pointer;
     text-decoration: none;
@@ -302,11 +312,8 @@ hr {
     padding: 8px;
 }
 
-
-
-
-
 /* -------------------------------------------------------------------------------------------------------------------------- */
+/* CASE STUDY BUTTONS */
 .case-study {
     text-decoration: none;
 }
