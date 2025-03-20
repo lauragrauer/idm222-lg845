@@ -228,13 +228,12 @@ hr {
     cursor: pointer;
     text-decoration: none;
     display: block;
-    margin: 2.8rem auto;
 }
 
 @media (min-width: 1024px) {
     .case-study-button {
-        margin-left: 40rem;
-        margin-right: 40rem;
+        margin-left: 5rem;
+        margin-right: 5rem;
     }
 }
 
