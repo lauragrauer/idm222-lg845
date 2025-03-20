@@ -364,14 +364,15 @@ hr {
     padding: 0;
 }
 
-/* CONTACT */
 /* CONTACT SECTION */
 .contact-section {
-    background-color: #242325;
+    background-color: #131313;
     padding: 2rem;
-    border-radius: 8px;
+    border-radius: 20px;
     margin-top: 2rem;
     color: #fff;
+    width: 100%; 
+    box-sizing: border-box; 
 }
 
 .contact-section h2 {
@@ -382,7 +383,7 @@ hr {
 }
 
 .divider {
-    width: 50%;
+    width: 100%; /* Make the divider fill the entire width */
     height: 1px;
     background-color: #5A595B;
     margin: 0.5rem auto 1.5rem auto;
