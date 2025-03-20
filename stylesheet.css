@@ -21,11 +21,12 @@ p {
     margin-right: 2rem;
     font-size: 1rem;
     margin-top: 1rem;
-    line-height: 1.5;
+    line-height: 1.8;
+    letter-spacing: 0.07rem;
     color: #CCCCCC;
 }
 
-@media (min-width: 1024px) {
+@media (min-width: 1280px) {
     p {
         margin-left: 10rem; /* Increase left margin */
         margin-right: 10rem; /* Increase right margin */
@@ -142,18 +143,13 @@ h4 {
     color: #FFFFFF;
 }
 
-/* Hover if possible for mobile */
-.menu-items a:hover {
-    background-color: #444444;
-}
-
 /* Show menu when active */
 .menu-items.active {
     right: 0;
 }
 
 /* DESKTOP VERSION*/
-@media (min-width: 1024px) {
+@media (min-width: 1280px) {
     .hamburger-icon {
         display: none; /* HIDE HAMBURGER FOR DESKTOP */
     }
@@ -216,7 +212,7 @@ h4 {
 }
 
 /* Mobile Version (max-width 768px) */
-@media (max-width: 768px) {
+@media (min-width: 768px) and (max-width: 1194px) {
     .menu-items {
         width: 65%;
         border-radius: 8px 0 0 8px;
@@ -289,15 +285,14 @@ img {
 }
 
 
+/* Images Container */
 .images-container {
-    width: 100%;
-    max-width: 100%; 
-    padding: 1rem; 
-    box-sizing: border-box; 
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100vh;
+    flex-wrap: wrap;
+    margin-bottom: 2rem;
+
 }
 
 /* -------------------------------------------------------------------------------------------------------------------------- */
@@ -306,6 +301,7 @@ img {
     text-align: center;
     border-top: 1px solid #5A595B;
     padding-top: 1rem;
+    line-height: 2px;
 }
 
 .contact-info a {
@@ -333,7 +329,7 @@ hr {
     background-color: #AF0E31;
     color: #FFFFFF;
     border-radius: 1rem;
-    padding: 3rem 5rem;
+    padding: 3rem 3rem;
     margin-top: 1rem;
     margin-left: auto;
     margin-right: auto; 
@@ -372,12 +368,12 @@ hr {
     background-color: #AF0E31;
     color: #FFFFFF; 
     border-radius: 0.9rem;
-    padding: 3rem 6rem;
+    padding: 3rem 3rem;
     text-align: center;
     cursor: pointer;
     text-decoration: none;
     display: block; 
-    margin: 2rem auto; 
+    margin: 0.5rem auto; 
     width: max-content; 
 }
 
@@ -395,6 +391,7 @@ hr {
     color: #19191A;
     font-size: 1.3rem;
     padding: 0.5rem;
+    margin-left: 0.01rem;
     border-top: 2px solid #19191A;
     border-bottom: 2px solid #19191A; 
     width: 100%;
@@ -453,7 +450,7 @@ hr {
 }
 
 /* Increase padding for desktop*/
-@media (min-width: 1200px) {
+@media (min-width: 1280px) {
     .case-study-button1 {
         margin-left: 20%;
         margin-right: 20%;
